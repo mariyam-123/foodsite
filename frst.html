@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* #navbar {
+         display: flex;
+             
+        }    */
+        #navbar {
+            background-color: aqua;
+            height: 60px;
+            /* color: blueviolet; */
+            display: flex;
+            /* flex-wrap: wrap-reverse; */
+            /* float: left; */
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            text-decoration: none;
+            list-style: none;
+            padding: 16px;
+            position: relative;
+            left: 210px;
+
+        }
+
+        #navbar ul li:hover {
+            background-color: aliceblue;
+            border-radius: 10px;
+            /* height: 60px; */
+            /* width: 70px; */
+        }
+
+        /* #innerul:hover{
+  display: block;
+} */
+        #srcbtn {
+            position: relative;
+            left: 700px;
+            top: 15px;
+        }
+
+        .input {
+            height: 25px;
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        #btn {
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        #btn:hover {
+            background-color: aquamarine;
+        } -->
+  <!-- 
+        /* #navbar ul li a:hover{
+    background-color: aliceblue;
+
+} */ -->
+
+  <link href="css/index.css" rel="stylesheet" src="index.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+  </head>
+
+<body>
+  <header>
+    <a href="#" class="toggle">
+      <span class="bar">
+
+      </span>
+      <span class="bar">
+
+      </span>
+      <span class="bar">
+
+      </span>
+    </a>
+
+    <nav id="navbar">
+      <ul id="ul" class="ul">
+        <li class="li"><a>Home</a></li>
+        <li class="li"><a>Contact</a></li>
+        <li class="li"><a>About</a></li>
+        <li class="li"><a>Services</a></li>
+        <!-- <ul id="innerul">
+                <li>abc</li>
+                <li>def</li>
+                <li>geh</li>
+                <li>ijk</li></ul>
+                </li>
+            </ul> -->
+        <div id="srcbtn">
+          <input type="text" class="input">
+          <button id="btn"> search</button>
+        </div>
+    </nav>
+
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/image.jpg" width="1400px" height="650px" alt="where is image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/image.jpg" width="1400px" height="650px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/image.jpg" width="1400px" height="650px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <p>
+    <button class="btn btn-primary mt-2 mx-2 content-center" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      ABOUT US
+    </button>
+  </p>
+
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal mx-2" id="collapseWidthExample">
+      <div class="card card-body" style="width: 1300px;">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus velit, dolor doloribus suscipit natus
+          soluta asperiores perspiciatis dolorum non odit esse, ex earum! Voluptate, recusandae accusamus impedit sunt
+          ut et modi quis eligendi tempora nemo perferendis nostrum quibusdam esse quod deserunt repellendus odio vitae
+          nesciunt id repudiandae minus deleniti sequi tenetur? Fugit architecto quis, doloribus, enim, vero asperiores
+          numquam voluptates rerum incidunt commodi laboriosam consequuntur repellendus quia nemo excepturi maxime
+          facere. Adipisci voluptate deleniti quidem exercitationem unde ipsum a officia, nihil libero. Facilis aperiam,
+          autem assumenda aspernatur neque officia excepturi, enim ab reiciendis eligendi nostrum, non perferendis error
+          ipsum.</h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
